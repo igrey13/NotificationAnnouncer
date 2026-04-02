@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotificationAnnouncer.MainPage"
+             Title="Notification Announcer">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="30">
+
+            <Label Text="🔔 Notification Announcer"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Listens to notifications and reads them aloud using KittenTTS."
+                   FontSize="14"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center" />
+
+            <BoxView HeightRequest="1" Color="LightGray" />
+
+            <Label Text="Service Status"
+                   FontSize="16"
+                   FontAttributes="Bold" />
+
+            <Label x:Name="ServiceStatusLabel"
+                   Text="Checking…"
+                   FontSize="14"
+                   TextColor="Gray" />
+
+            <Button x:Name="StartServiceButton"
+                    Text="Start Background Service"
+                    Clicked="OnStartServiceClicked"
+                    BackgroundColor="#512BD4"
+                    TextColor="White"
+                    CornerRadius="8" />
+
+            <Button x:Name="StopServiceButton"
+                    Text="Stop Background Service"
+                    Clicked="OnStopServiceClicked"
+                    BackgroundColor="#E74C3C"
+                    TextColor="White"
+                    CornerRadius="8" />
+
+            <BoxView HeightRequest="1" Color="LightGray" />
+
+            <Label Text="Grant Notification Access"
+                   FontSize="16"
+                   FontAttributes="Bold" />
+
+            <Label Text="The app needs Notification Access permission to read notifications from other apps."
+                   FontSize="13"
+                   TextColor="Gray"
+                   HorizontalTextAlignment="Center" />
+
+            <Button Text="Open Notification Access Settings"
+                    Clicked="OnOpenNotificationAccessClicked"
+                    BackgroundColor="#2980B9"
+                    TextColor="White"
+                    CornerRadius="8" />
+
+            <BoxView HeightRequest="1" Color="LightGray" />
+
+            <Label Text="Queue"
+                   FontSize="16"
+                   FontAttributes="Bold" />
+
+            <Label x:Name="QueueStatusLabel"
+                   Text="Queue is empty"
+                   FontSize="14"
+                   TextColor="Gray" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

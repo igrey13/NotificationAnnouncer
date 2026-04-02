@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 456 456">
+  <!-- Bell icon foreground -->
+  <g fill="#FFFFFF">
+    <path d="M228 60 C180 60 150 100 150 145 L150 230 L120 260 L120 275 L336 275 L336 260 L306 230 L306 145 C306 100 276 60 228 60 Z"/>
+    <ellipse cx="228" cy="295" rx="28" ry="28"/>
+  </g>
+</svg>
