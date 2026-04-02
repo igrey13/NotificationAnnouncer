@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notification Announcer</string>
+    <string name="foreground_channel_id">announcer_foreground</string>
+    <string name="foreground_channel_name">Announcer Service</string>
+    <string name="foreground_notification_title">Notification Announcer</string>
+    <string name="foreground_notification_text">Listening for notifications…</string>
+</resources>
